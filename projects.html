@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | CSE Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      background-size: 400% 400%;
+      animation: gradientAnimation 20s ease infinite;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 3rem;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .navbar .logo {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: white;
+    }
+
+    .navbar nav a {
+      color: white;
+      margin-left: 2rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .navbar nav a:hover {
+      color: #00ffd5;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      flex: 1;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: #00ffd5;
+    }
+
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 0 2rem;
+    }
+
+    .project-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+      backdrop-filter: blur(6px);
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .project-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .project-card p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .project-card span {
+      display: block;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      color: #ddd;
+    }
+
+    .project-card a.view-btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #00ffd5;
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .project-card a.view-btn:hover {
+      background-color: #00c8a9;
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      max-height: 160px;
+      object-fit: cover;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .navbar nav a {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">HARSHINI CHINNASAMY</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="section">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/609/609803.png" alt="Portfolio Image" />
+        <h3>My Portfolio</h3>
+        <p>A responsive personal portfolio to showcase my skills, projects, and resume.</p>
+        <span>HTML, CSS, JavaScript</span>
+        <a href="https://github.com/yourusername/portfolio" target="_blank" class="view-btn">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712035.png" alt="AI Chatbot Image" />
+        <h3>CureNest - Medical Chatbot (Coming Soon)</h3>
+        <p>An AI-powered chatbot for answering basic medical queries and guiding users.</p>
+        <span>AI, NLP, Python (Planned)</span>
+        <a href="#" class="view-btn" style="pointer-events: none; opacity: 0.6;">Coming Soon</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>&copy; 2025 HARSHINI</footer>
+</body>
+</html>

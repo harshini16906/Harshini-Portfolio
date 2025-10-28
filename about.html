@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | CSE Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      background-size: 400% 400%;
+      animation: gradientAnimation 20s ease infinite;
+      color: #fff;
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2rem 3rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .navbar .logo {
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+
+    .navbar nav {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .navbar nav a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .navbar nav a:hover {
+      color: #00ffd5;
+    }
+
+    /* Header */
+    .main-header {
+      margin-top: 120px;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .main-header h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      color: #00ffd5;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 16px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #00ffd5;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    ul {
+      margin-left: 1.5rem;
+    }
+
+    ul li {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      margin-top: 2rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .main-header h1 {
+        font-size: 2.4rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 2rem;
+      }
+
+      .navbar nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+      }
+
+      .container {
+        padding: 1.5rem;
+        margin: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">HARSHINI CHINNASAMY</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Page Title -->
+  <header class="main-header">
+    <h1>About Me</h1>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <section>
+      <h2>👋 Introduction</h2>
+      <p>
+        Hello! I'm <strong>HARSHINI</strong>, a passionate Computer Science Engineering student who thrives on solving problems and exploring the ever-evolving world of technology.
+        I enjoy creating interactive web experiences, working with AI, and always pushing myself to learn something new. I'm deeply interested in developing solutions that have real-world impact.
+      </p>
+    </section>
+
+    <section>
+      <h2>🎓 Education</h2>
+      <ul>
+        <li><strong>College:</strong> B.E CSE at KSR College of Engineering, Tiruchengode (2024–2028)</li>
+        <li><strong>HSC:</strong> Government Higher Secondary School, Jalipudur – 87.16%</li>
+        <li><strong>SSLC:</strong> Government Higher Secondary School, Jalipudur – 86.6%</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🌟 Extra Curricular Activities</h2>
+      <ul>
+        <li>Presented a paper titled "Medical Chatbot - Curenest" at the National Level Technical Symposium hosted by Kongu Engineering College and secured 2nd Place (Sep 2025).</li>
+        <li>Secured 2nd Prize in Lyric Code (Non-Technical Event) at the National Level Technical Symposium, Kongu Engineering College (Sep 2025).</li>
+        <li>Actively participated in Chain Quest, a non-technical event conducted during the National Level Technical Symposium at Kongu Engineering College (Sep 2025).</li>
+        <li>Participated in Debugging at KSR College of Engineering.</li>
+        <li>Presented a technical paper titled "6G Wireless Technology" at the National Level Technical Symposium organized by Kongu Engineering College (Mar 2025).</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <footer>&copy; 2025 HARSHINI</footer>
+
+</body>
+</html>
